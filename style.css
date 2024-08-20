@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px; /* Увеличенная ширина контейнера */
     margin: 0 auto;
     background: #fff;
     padding: 20px;
@@ -49,6 +49,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
+select,
 textarea {
     width: 100%;
     padding: 10px;
@@ -70,3 +71,4 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: #4cae4c;
 }
+
