@@ -7,12 +7,12 @@ body {
 }
 
 .container {
-    max-width: 1200px; /* Увеличенная ширина контейнера */
+    max-width: 1200px; /* Максимальная ширина контейнера */
     margin: 0 auto;
-    background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: #fff; /* Фоновый цвет контейнера */
 }
 
 header {
@@ -51,12 +51,12 @@ input[type="email"],
 input[type="tel"],
 select,
 textarea {
-    width: 100%;
+    width: 100%; /* Полная ширина для полей ввода */
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Учет границ и отступов */
 }
 
 input[type="submit"] {
@@ -70,5 +70,22 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background: #4cae4c;
+}
+
+/* Дополнительные стили для адаптивности */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Уменьшение отступов на маленьких экранах */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Уменьшение размера заголовка на мобильных устройствах */
+    }
+
+    .profile-photo {
+        width: 100px; /* Уменьшение размера фото на мобильных устройствах */
+    }
 }
 
